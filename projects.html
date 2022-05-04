@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Göktuğ YEŞİLYURT - Projects</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="slick/slick.css" />
+		<link rel="stylesheet" href="slick/slick-theme.css" />
+		<script src="scripts/jquery-3.6.0.min.js"></script>
+		<style>
+			section#projects {
+				width: 50%;
+				margin: 50px auto;
+			}
+
+			section#projects .slider a {
+				text-decoration: none;
+			}
+
+			section#projects .slider div {
+				text-align: center;
+				position: relative;
+				overflow: hidden;
+			}
+
+			section#projects .slider div:hover {
+				cursor: pointer;
+			}
+
+			section#article {
+				width: 75%;
+				margin: 50px auto;
+				text-align: center;
+			}
+
+			section#article #thumb {
+				width: fit-content;
+				max-width: 75%;
+				max-height: 500px;
+			}
+
+			section#article #desc {
+				text-align: justify;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li><a href="/home.html">Home</a></li>
+				<li><a href="/about_me.html">About Me</a></li>
+				<li><a href="/projects.html">Projects</a></li>
+				<li><a href="/gallery.html">Gallery (?)</a></li>
+				<li><a href="/contact.html">Contact Me</a></li>
+			</ul>
+		</header>
+		<section id="content">
+			<section id="projects">
+				<div class="slider">
+					<!-- Will be filled in dynamically from JS file -->
+				</div>
+			</section>
+			<section id="article">
+				<img src="" alt="" id="thumb" />
+				<p id="desc"></p>
+				<p id="link"><a href="">Click here to go to project's site</a></p>
+			</section>
+		</section>
+		<footer>
+			<p>
+				Made by Göktuğ YEŞİLYURT with
+				<span style="color: red" id="love">&hearts;</span>
+			</p>
+		</footer>
+		<script src="slick/slick.min.js"></script>
+		<script src="scripts/index.js"></script>
+		<script src="scripts/projects.js"></script>
+	</body>
+</html>
