@@ -32,9 +32,10 @@ header ul li:hover {
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
+	background-color: black;
 }
 
 footer p {
