@@ -13,12 +13,11 @@ $(function () {
 	});
 
 	$("#love").mouseenter(function () {
-		$(this).css(
-			"color",
-			`rgb(${getRandIntBetweenRange(0, 255)}, ${getRandIntBetweenRange(0, 255)}, ${getRandIntBetweenRange(
+		$(this).animate({
+			color: `rgb(${getRandIntBetweenRange(0, 255)}, ${getRandIntBetweenRange(0, 255)}, ${getRandIntBetweenRange(
 				0,
 				255
-			)})`
-		);
+			)})`,
+		});
 	});
 });
