@@ -1,3 +1,5 @@
+const PREVIOUS_HEART_COLOR_KEY = "previousHeartColor";
+
 function getRandIntBetweenRange(min, max) {
 	return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -12,12 +14,19 @@ $(function () {
 		});
 	});
 
+	const previousHeartColor = localStorage.getItem(PREVIOUS_HEART_COLOR_KEY);
+	if (previousHeartColor) {
+		$("#love").css("color", previousHeartColor);
+	}
+
 	$("#love").mouseenter(function () {
+		const newColor = `rgb(${getRandIntBetweenRange(0, 255)}, ${getRandIntBetweenRange(
+			0,
+			255
+		)}, ${getRandIntBetweenRange(0, 255)})`;
+		localStorage.setItem(PREVIOUS_HEART_COLOR_KEY, newColor);
 		$(this).animate({
-			color: `rgb(${getRandIntBetweenRange(0, 255)}, ${getRandIntBetweenRange(0, 255)}, ${getRandIntBetweenRange(
-				0,
-				255
-			)})`,
+			color: newColor,
 		});
 	});
 });
