@@ -8,7 +8,45 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="scripts/jquery-3.6.0.min.js"></script>
 		<script src="scripts/jquery.color.js"></script>
-		<style></style>
+		<style>
+			#restart {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 2;
+				padding: 20px 50px;
+				border-radius: 20%;
+				font-size: 24px;
+				color: black;
+				background: rgb(123, 123, 123);
+			}
+			#gun {
+				width: 75px;
+				position: absolute;
+				top: 50%;
+				left: 50px;
+				transform: translateX(-50%);
+			}
+			#target {
+				width: 200px;
+				position: absolute;
+				top: 50px;
+				left: 75%;
+			}
+			.bullet {
+				width: 25px;
+				height: 10px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				background: url("images/bullet.png") no-repeat left center;
+				background-size: contain;
+			}
+			.hidden {
+				display: none;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -20,7 +58,13 @@
 				<li><a href="/contact.html">Contact Me</a></li>
 			</ul>
 		</header>
-		<section id="content"></section>
+		<section id="content">
+			<h1>Score: <span id="score">0</span></h1>
+			<h1>Time Left: <span id="time">0.00s</span></h1>
+			<button id="restart" class="hidden">Restart!</button>
+			<img src="images/gun.png" id="gun" />
+			<img src="images/target.png" id="target" />
+		</section>
 		<footer>
 			<p>
 				Made by Göktuğ YEŞİLYURT with
@@ -28,5 +72,6 @@
 			</p>
 		</footer>
 		<script src="scripts/index.js"></script>
+		<script src="scripts/game.js"></script>
 	</body>
 </html>
