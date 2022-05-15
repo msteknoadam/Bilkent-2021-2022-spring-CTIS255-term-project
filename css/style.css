@@ -48,6 +48,9 @@ section#content {
 }
 
 @media (max-width: 844px) {
+	header ul {
+		padding: 0;
+	}
 	section#content {
 		width: 95%;
 		margin: 10px auto;
