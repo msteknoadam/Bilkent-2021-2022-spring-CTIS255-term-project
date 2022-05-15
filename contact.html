@@ -4,20 +4,25 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Göktuğ YEŞİLYURT - Playlists</title>
+		<title>Göktuğ YEŞİLYURT - Contact Me</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="materialize/css/materialize.min.css" />
 		<script src="scripts/jquery-3.6.0.min.js"></script>
 		<script src="scripts/jquery.color.js"></script>
+		<script src="materialize/js/materialize.min.js"></script>
 		<style>
 			#thanks {
 				text-decoration: underline;
 			}
+
 			#thanks:hover {
 				cursor: pointer;
 			}
+
 			section#info p {
 				text-align: center;
 			}
+
 			section#form {
 				width: 75%;
 				margin: auto;
@@ -29,6 +34,14 @@
 				width: 100%;
 			}
 
+			section#form label {
+				font-size: 1.4rem;
+			}
+
+			section#form textarea {
+				height: 10rem;
+			}
+
 			section#form tr td:first-child {
 				width: 30%;
 			}
@@ -38,7 +51,6 @@
 			}
 
 			section#form input#send {
-				color: black;
 				width: 25%;
 				text-transform: uppercase;
 			}
@@ -78,13 +90,15 @@
 							<td><input type="email" name="email" id="email" /></td>
 						</tr>
 						<tr>
-							<td colspan="2">Your Message</td>
+							<td colspan="2"><h5>Your Message</h5></td>
 						</tr>
 						<tr>
 							<td colspan="2"><textarea name="message" id="message" cols="30" rows="10"></textarea></td>
 						</tr>
 						<tr>
-							<td colspan="2"><input type="button" value="Send" id="send" /></td>
+							<td colspan="2">
+								<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+							</td>
 						</tr>
 					</table>
 				</form>

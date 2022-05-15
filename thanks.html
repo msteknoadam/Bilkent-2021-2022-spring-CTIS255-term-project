@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Thanks for Contacting Me!</title>
+		<style>
+			* {
+				color: white;
+			}
+			body {
+				background: black;
+			}
+		</style>
+		<script src="scripts/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<p id="name"></p>
+		<p id="surname"></p>
+		<p id="email"></p>
+		<p id="message"></p>
+
+		<script>
+			$(document).ready(function () {
+				const params = new URLSearchParams(window.location.search);
+				$("#name").text(params.get("name"));
+				$("#surname").text(params.get("surname"));
+				$("#email").text(params.get("email"));
+				$("#message").text(params.get("message"));
+			});
+		</script>
+	</body>
+</html>
