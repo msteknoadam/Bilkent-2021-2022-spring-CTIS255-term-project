@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Thanks for Contacting Me!</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="scripts/jquery-3.6.0.min.js"></script>
+		<script src="scripts/jquery.color.js"></script>
+		<script src="scripts/party.min.js"></script>
 		<style>
 			* {
 				color: white;
@@ -15,27 +19,42 @@
 			}
 			#thanks {
 				margin: 100px;
-				font-size: 72px;
+				font-size: 40px;
 			}
-			p {
+			#content p {
 				font-weight: bold;
 				padding: 20px;
-				font-size: 30px;
+				font-size: 20px;
 			}
-			p span {
+			#content p span {
 				font-weight: normal;
 			}
 		</style>
-		<script src="scripts/jquery-3.6.0.min.js"></script>
-		<script src="scripts/party.min.js"></script>
 	</head>
 	<body>
-		<h1 id="thanks">Thanks for sending me a message!</h1>
-		<p>Your submitted name: <span id="name"></span></p>
-		<p>Your submitted surname: <span id="surname"></span></p>
-		<p>Your submitted e-mail: <span id="email"></span></p>
-		<p>Your submitted message: <span id="message"></span></p>
-
+		<header>
+			<ul>
+				<li><a href="/home.html">Home</a></li>
+				<li><a href="/about_me.html">About Me</a></li>
+				<li><a href="/projects.html">Projects</a></li>
+				<li><a href="/game.html">Game</a></li>
+				<li><a href="/contact.html">Contact Me</a></li>
+			</ul>
+		</header>
+		<section id="content">
+			<h1 id="thanks">Thanks for sending me a message!</h1>
+			<p>Your submitted name: <span id="name"></span></p>
+			<p>Your submitted surname: <span id="surname"></span></p>
+			<p>Your submitted e-mail: <span id="email"></span></p>
+			<p>Your submitted message: <span id="message"></span></p>
+		</section>
+		<footer>
+			<p>
+				Made by Göktuğ YEŞİLYURT with
+				<span style="color: red" id="love">&hearts;</span>
+			</p>
+		</footer>
+		<script src="scripts/index.js"></script>
 		<script>
 			$(document).ready(function () {
 				const params = new URLSearchParams(window.location.search);
