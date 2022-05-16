@@ -92,6 +92,7 @@ $(document).ready(function () {
 		});
 		bullets = [];
 		score = 0;
+		$("#score").text(score);
 		timeLeftMs = GAME_LENGTH_MS;
 		targetInterval = setInterval(() => updateTarget(), TARGET_UPDATE_INTERVAL_MS);
 		bulletInterval = setInterval(() => updateBullets(), BULLET_UPDATE_INTERVAL_MS);
