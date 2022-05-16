@@ -59,7 +59,7 @@ const projects = [
 		and therefore the code got broken over the years while I didn't have any time to rebuild it properly again. I'm hoping to do it some time soon when I get a chance :)`,
 	},
 	{
-		name: "Converstion Rate Fetch API",
+		name: "Converston Rate Fetch API",
 		image: "https://picsum.photos/400/300",
 		link: "https://tekno-currency-conversion-api.herokuapp.com",
 		desc: `
